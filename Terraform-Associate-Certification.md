@@ -393,10 +393,11 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 - It is secure practice to omit secrets when storing state in the backend. Given that's done, can you use  -backend-config=PATH to specify secrets when trying communicate with the backend?  
    . Yes  
 - What is the result of this:  
-   > zipmap (["foo", "bar"], [5, 10])  
-   . { "foo" = 5  
+```zipmap (["foo", "bar"], [5, 10])```  
+   >>>{ "foo" = 5  
        "bar" = 10 }  
-   OBS.: Estudar sobre o zipmap  
+
+   ***OBS.: Estudar sobre o zipmap***  
 
 - In Terraform 0.12 , which of the following is true?  
 
