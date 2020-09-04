@@ -96,12 +96,13 @@ E. Use module composition to use the same module across all projects , and works
 
 6> https://www.terraform.io/docs/configuration/resources.html#depends_on-explicit-resource-dependencies  
 ```
-   resource "aws_s3_bucket" "example" { 
-   bucket = "my-test-s3-terraform-bucket"
-   …} 
-resource "aws_iam_role" "test_role" { 
-   name = "test_role"
-   …}
+   resource "aws_s3_bucket" "example" {  
+     bucket = "my-test-s3-terraform-bucket"
+   …}  
+
+   resource "aws_iam_role" "test_role" {  
+     name = "test_role"  
+   …}  
 ```   
 Due to the way that the application code is written , the s3 bucket must be created before the test role is created , otherwise there will be a problem. How can you ensure that?  
 
@@ -181,9 +182,9 @@ Your provider setting is as below-
 
 **The default provider configuration**  
 ```
-   provider "aws" {
-   region = "us-east-1"
-} 
+   provider "aws" {  
+      region = "us-east-1"  
+   }  
 ```  
 A. No way to enable this via a single script . Write 2 different scripts with different default providers in the 2 scripts , one for us-east , another for us-west.  
 
@@ -302,9 +303,9 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 
 - In Terraform 0.12, you can do:  
 ```   
-   variable "myvar" {
-   type = string
-   }
+   variable "myvar" {  
+     type = string  
+   }  
 ``` 
    ..Note: string does not have any quotes around it. This is possible because:  
 1)Types are always complex  
