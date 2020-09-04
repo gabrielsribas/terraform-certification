@@ -150,11 +150,17 @@ C.  Just write the terraform config file for the new resources , and run terraf
 Please identify the offerings which are unique to Terraform Enterprise , and not available in either Terraform OSS , or Terraform Cloud. There can be more than one answer.  
 
 >>>A. SAML/SSO.  
+
 B. Sentinel.  
+
 >>>C. Audit Logs.  
+
 >>>D. Private Network Connectivity.  
+
 E. Full API Coverage.  
+
 F. VCS Integration.  
+
 >>>G. Clustering.  
 
 11> https://www.terraform.io/docs/cloud/sentinel/index.html  
