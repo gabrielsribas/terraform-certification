@@ -340,7 +340,7 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 - Map definition format:  
    . foo = {}  
 - To publish to Terraform's public module registry name has to be in ___________ format:  
-   . terraform-<PROVIDER>-<NAME>  
+   ```terraform-<PROVIDER>-<NAME>```  
 - Splat expressions use which character?  
    . *  
 - In Terraform 0.12, you can return the entire module itself from a module.  
