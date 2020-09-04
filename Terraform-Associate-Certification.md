@@ -149,13 +149,13 @@ C.  Just write the terraform config file for the new resources , and run terraf
 10> https://www.hashicorp.com/products/terraform/pricing  
 Please identify the offerings which are unique to Terraform Enterprise , and not available in either Terraform OSS , or Terraform Cloud. There can be more than one answer.  
 
->>>A. SAML/SSO<<<  
-B. Sentinel  
->>>C. Audit Logs<<<  
->>>D. Private Network Connectivity<<<  
-E. Full API Coverage  
-F. VCS Integration  
->>>G. Clustering<<<  
+>>>A. SAML/SSO.  
+B. Sentinel.  
+>>>C. Audit Logs.  
+>>>D. Private Network Connectivity.  
+E. Full API Coverage.  
+F. VCS Integration.  
+>>>G. Clustering.  
 
 11> https://www.terraform.io/docs/cloud/sentinel/index.html  
 Your team lead does not trust the junior terraform engineers who now have access to the git repo . So , he wants you to have some sort of a checking layer , whereby , you can ensure that the juniors will not create any non-compliant resources that might lead to a security audit failure in future. What can you do to efficiently enforce this ?   
