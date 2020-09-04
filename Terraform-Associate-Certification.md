@@ -179,8 +179,8 @@ Your team has started using terraform OSS in a big way , and now wants to deploy
 
 Your provider setting is as below-  
 
-# The default provider configuration   
-````
+**The default provider configuration**  
+```
    provider "aws" {
    region = "us-east-1"
 } 
@@ -308,8 +308,11 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 ``` 
    ..Note: string does not have any quotes around it. This is possible because:  
 1)Types are always complex  
->>2) Types are first class values   
+
+>>2) Types are first class values  
+
 3) Types are string only  
+
 4) Types are second-class values  
 
 - Can you depends_on parameter with data block?  
@@ -409,8 +412,11 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 
 - Which of the following is NOT valid way to enter comments in terraform code:  
    1) /*.  */  
+
    >>2) /.      ./  
+
    3) #  
+
    4) //  
 
 - The following is an example of ___________:  
@@ -424,26 +430,32 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
       }
 ``` 
    >>1) Dynamic Block  
+
    2) Dynamic backend  
+
    3) Dynamic Provisioning  
+
    4) Terraform block  
 
 - You have file foo.tf with 5 resources defined in it. You also bar.tf with another 5 resources defined in it. If concatenate the 2 files and deleted foo.tf bar.tf files, what would be the impact?  
 
 1) You will get an error because terraform will look for those 2 files.  
+
 2) You will have to do terraform init all over again  
+
 3) Terraform plan will be fine, but terraform apply will report an error  
+
 >>4) Nothing  
 
-# Principal terraform workspace commands easier:  
+## Principal terraform workspace commands easier:  
 - terraform13 workspace [new, list, show, select, delete]  
 
 
---- Learn about IaC ---  
-# Infrastructure as Code: What Is It? Why Is It Important?  
+# Learn about IaC  
+## Infrastructure as Code: What Is It? Why Is It Important?  
    . O valor no `o que é `e `porque é importante` iac está na capacidade versionamento, reusabilidade e automação da infraestrutura.  
 
-# Infrastructure as Code in a Private or Public Cloud.  
+## Infrastructure as Code in a Private or Public Cloud.  
    . A ideia aqui seria o entendimento em relação a cloud privada em detrimento a cloud pública.  
       > Manter uma cloud privada exige muita expertise de soluções individuais.  
       > As equipes normalmente são grandes e as alterações, apesar de terem um nível de automação e alta disponibilidade, seguem um estilo próprio de configuração e proviosamento de infraestrura.  
@@ -452,13 +464,13 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
               Repositórios como github, gitlab, bitbucket, etc.. Normalmente são utilizados como a fonte de verdade e são ligados em ferramentas de CI para realizarem testes na infraestrutura antes de aplicar qualquer coisa.  
               O terraform resolve esse problema, deixando as alterações de infraestrutura preditíveis, idempotente. Uma vez que além de liberar para aplicação das alterações no ambiente após os testes (plan) rodarem com sucesso. Te dá um breaf sobre como está o estado da sua infraestrura em constraste ao que está se propondo a aplicar. E aplicando apenas a diferença proposta.  
 
-# Introduction to Terraform  
+## Introduction to Terraform  
    . Terraform provê um plano de execução. Isso quer dizer que antes de aplicar qualquer coisa ele planeja sua execução.  
    . Terraform executa e aplica seu plano de forma paralela para recursos que são independentes.  
    . Terraform te conta o que está alterando(add, change, destroy) e em qual ordem.  
    .  
 
-# Casos de uso  
+## Casos de uso  
    . São demonstração da aplicabilidade do terraform em vários cenários e arquiteturas. Alguns exemplos são:  
       > heroku webapp  
       > Arquitetura de aplicação multicamada. Ex.: A camada de banco de dados é criada antes da camada web, etc...  
@@ -466,11 +478,10 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
       > SDN.  
       > etc...  
 
---- Manage infrastructure ---  
+# Manage infrastructure   
 
 https://learn.hashicorp.com/tutorials/terraform/associate-study  
 ...Continuar em >> Learn more subcommands  
-
 
 
 
