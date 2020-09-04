@@ -450,7 +450,7 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 >>4) Nothing  
 
 ## Principal terraform workspace commands easier:  
-- terraform13 workspace [new, list, show, select, delete]  
+- terraform workspace [new, list, show, select, delete]  
 
 
 # Learn about IaC  
