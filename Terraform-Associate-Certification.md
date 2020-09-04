@@ -95,7 +95,7 @@ D.  Create individual workspaces for each team , and ask them to share modules 
 E. Use module composition to use the same module across all projects , and workspaces  
 
 6> https://www.terraform.io/docs/configuration/resources.html#depends_on-explicit-resource-dependencies  
-````
+```
    resource "aws_s3_bucket" "example" { 
    bucket = "my-test-s3-terraform-bucket"
    …} 
