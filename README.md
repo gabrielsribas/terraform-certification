@@ -19,7 +19,7 @@ Videos explicativos
 HashiCorp Certified Terraform Associate - Overview  
 https://www.youtube.com/watch?v=vhZEdqlXlSs  
 
-# QUASE UM DUMB Questions *** TestKing ???  
+# Questões para praticar  
 https://testmozusercontent.com/q/1245195/student  
 
 
@@ -29,6 +29,7 @@ Playlist questions terraform associate:
 HashiCorp Certified Terraform Associate - Overview  
 https://www.youtube.com/watch?v=vhZEdqlXlSs&list=PL5VXZTK6spA2HF5Kf0rI9RDRHF9Hopffr  
 
+by **CloudArchitectureByTNC**
 
 1> https://www.terraform.io/docs/state/index.html  
 Your manager has instructed you to start using terraform for your day-to-day operations , but your security team is concerned about the terraform state files . They have heard it contains confidential information , and are worried that it will not be securely protected. What should be your response to the security team in this regard?  
@@ -289,6 +290,8 @@ C. It refers to the last web EC2 instance , as by default , if no index is prov
 
 D. The above will result in a syntax error , as it is not syntactically correct . Resources defined using count , can only be referenced using indexes.  
 
+by **CloudArchitectureByTNC**
+
 
 # Guia para estudo. Direto ao ponto - Documentação  
 https://adinermie.com/hashicorp-certified-terraform-associate-study-guide/  
@@ -308,7 +311,8 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
    }  
 ``` 
    ..Note: string does not have any quotes around it. This is possible because:  
-1)Types are always complex  
+
+1) Types are always complex  
 
 >>2) Types are first class values  
 
@@ -317,54 +321,79 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 4) Types are second-class values  
 
 - Can you depends_on parameter with data block?  
-   . yes  
+   >> yes  
+
 - Workspace functionality is same between terraform cloud, terraform enterprise, and terraform opensource.  
-   . false  
+   >> false  
+
 - Resource Graph:   
-   . São alterações e dependências. Landscape  
+   >> São alterações e dependências. Landscape  
+
 - If there are multiple .tf files, how will terraform "load" them?  
-   . alphabetical order  
+   >> alphabetical order  
+
 - Terraform é uma linquagem declarativa.  
+  
 - Get resource list from terraform state  
-   . terraform state list  
+   >> terraform state list  
+
 - One way to define variables to be used in the child module and give them default values:  
-   . Put them in a .tfvars file in the MODULE directory and give them default values  
+   >> Put them in a .tfvars file in the MODULE directory and give them default values  
+
 - Dynamic block acts like a :  
-   . for loop  
+   >> for loop  
+
 - Terraform Cloud can be managed by CLI, but it needs:  
-   . API Token  
+   >> API Token  
+
 - Most common place where people save remote state files?  
-   . s3 bucket  
+   >> s3 bucket  
+
 - Terraform cannot manage cross-cloud dependencies:  
-   . false  
+   >> false  
+
 - Map definition format:  
-   . foo = {}  
+   >> foo = {}  
+
 - To publish to Terraform's public module registry name has to be in ___________ format:  
    ```terraform-<PROVIDER>-<NAME>```  
+
 - Splat expressions use which character?  
-   . * (asterisk)  
+   >> * (asterisk)  
+
 - In Terraform 0.12, you can return the entire module itself from a module.  
-   . Yes  
+   >> Yes  
+
 - PTFE is same as:  
-   . Terraform Enterprise  
+   >> Terraform Enterprise  
+
 - If you only have one folder of terraform codes, you are using _____________________ module:  
-   . root  
+   >> root  
+
 - Count has 2 limitations (1. inline and 2. modifications in code creates unexpected results) in Terraform 0.11. Which expression in Terraform 0.12 solves this problem?  
-   . for_each  
+   >> for_each  
+
 - Which of the following is NOT a component of Terraform  
-   . libraries  
+   >> libraries  
+
 - State file should be kept secret since it has sensitive data:  
-   . True  
+   >> True  
+
 - Which feature allows to store modules ONLY for your organization?  
-   . Private Module registry  
+   >> Private Module registry  
+
 - There are providers for which of the following?  
-   . docker, aws e azure  
+   >> docker, aws e azure  
+
 - With terraform init command , if you want to key/value directly on the command line, what does that look like?  
-   . -backend-config="KEY=VALUE"  
+   >> -backend-config="KEY=VALUE"  
+
 - In this command: what does upgrade do? terraform init -upgrade  
-   . upgrades modules and providers  
+   >> upgrades modules and providers  
+
 - Command to create a new workspace named foo  
-   . terraform workspace new foo  
+   >> terraform workspace new foo  
+
 - This is an example of:  
 ```
       terraform {
@@ -372,26 +401,37 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
             # (backend-specific settings...)
          }
       }
-``` 
-   . terraform block  
+```  
+
+   >> terraform block  
+
 - You can use count to loop over an entire resource and you can also use count within a resource to loop over inline blocks. True/False.  
-   . True  
+   >> True  
+
 - Which of the following is NOT a type of collections:  
-   . Object  
+   >> Object  
+
 - Inside a module what do you use so that a variable or attribute's value is available to the caller terraform code?  
-   . output  
+   >> output  
+
 - In Terraform Enterprise, each workspace can map to how many VCS repos(s)?  
-   . 1  
+   >> 1  
+
 - _________ is a special provider that exists to provide an interface between Terraform and external programs  
-   . external  
+   >> external  
+
 - Adding in explicit provider dependency in provider block is not a good practice.  
-   . false  
+   >> false  
+
 - Which type does the length function not work on?  
-   . number  
+   >> number  
+
 - You have 2 folders of terraform code. Both folders save their state remotely on a s3 bucket. If you want to access resources of folder2 from folder1 , what do you have to do?  
-   . point to it using data "terraform_remote_state" block  
+   >> point to it using data "terraform_remote_state" block  
+
 - It is secure practice to omit secrets when storing state in the backend. Given that's done, can you use  -backend-config=PATH to specify secrets when trying communicate with the backend?  
-   . Yes  
+   >> Yes  
+
 - What is the result of this:  
 ```zipmap (["foo", "bar"], [5, 10])```  
    >>>{ "foo" = 5  
@@ -410,16 +450,16 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
    >>4) Parent module can send complex objects to child module, AND child module can return complex objects  
 
 - Plugins execute as separate processes:  
-   . Verdade  
+   >> Verdade  
 
 - Which of the following is NOT valid way to enter comments in terraform code:  
-   1) /*.  */  
+   1) `/*.  */`  
 
-   >>2) /.      ./  
+   >>2) `/.      ./`  
 
-   3) #  
+   3) `#`  
 
-   4) //  
+   4) `//`  
 
 - The following is an example of ___________:  
 ```
@@ -430,7 +470,8 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
          to_port = ingres.value
          protocol = "tcp"
       }
-``` 
+```  
+
    >>1) Dynamic Block  
 
    2) Dynamic backend  
@@ -495,7 +536,7 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 
 - How do you figure out which providers you are using?  
 
-1) terraform providers command  
+>>1) terraform providers command  
 
 2) terraform apply command  
 
@@ -506,40 +547,38 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 ## Principal terraform workspace commands easier:  
 - terraform workspace [new, list, show, select, delete]  
 
-
 # Learn about IaC  
 ## Infrastructure as Code: What Is It? Why Is It Important?  
    . O valor no `o que é `e `porque é importante` iac está na capacidade versionamento, reusabilidade e automação da infraestrutura.  
 
 ## Infrastructure as Code in a Private or Public Cloud.  
-   . A ideia aqui seria o entendimento em relação a cloud privada em detrimento a cloud pública.  
-      > Manter uma cloud privada exige muita expertise de soluções individuais.  
-      > As equipes normalmente são grandes e as alterações, apesar de terem um nível de automação e alta disponibilidade, seguem um estilo próprio de configuração e proviosamento de infraestrura.  
-      > Normalmente, as alterações são realizadas na cara do sistema via CLI e/ou GUI, levando ao risco de imperícia, mismatch de configurações, etc...  
-      Final.: O iac vem para cobrir esses gaps. Fornecendo infraestrutura gerenciável, automatizada, versionada, workflow padronizado, código legível, etc...  
-              Repositórios como github, gitlab, bitbucket, etc.. Normalmente são utilizados como a fonte de verdade e são ligados em ferramentas de CI para realizarem testes na infraestrutura antes de aplicar qualquer coisa.  
-              O terraform resolve esse problema, deixando as alterações de infraestrutura preditíveis, idempotente. Uma vez que além de liberar para aplicação das alterações no ambiente após os testes (plan) rodarem com sucesso. Te dá um breaf sobre como está o estado da sua infraestrura em constraste ao que está se propondo a aplicar. E aplicando apenas a diferença proposta.  
+A ideia aqui seria o entendimento em relação a cloud privada em detrimento a cloud pública.  
+* Manter uma cloud privada exige muita expertise de soluções individuais.  
+* As equipes normalmente são grandes e as alterações, apesar de terem um nível de automação e alta disponibilidade, seguem um estilo próprio de configuração e proviosamento de infraestrutura.  
+* Normalmente, as alterações são realizadas na cara do sistema via CLI e/ou GUI, levando ao risco de imperícia, mismatch de configurações, etc...  
+* O iac vem para cobrir esses gaps. Fornecendo infraestrutura gerenciável, automatizada, versionada, workflow padronizado, código legível, etc...  
+* Repositórios como github, gitlab, bitbucket, etc.. Normalmente são utilizados como a fonte de verdade e são ligados em ferramentas de CI para realizarem testes na infraestrutura antes de aplicar qualquer coisa.  
+* O terraform resolve esse problema, deixando as alterações de infraestrutura preditíveis, idempotente. Uma vez que além de liberar para aplicação das alterações no ambiente após os testes (plan) rodarem com sucesso. Te dá um breaf sobre como está o estado da sua infraestrura em constraste ao que está se propondo a aplicar. E aplicando apenas a diferença proposta.  
 
 ## Introduction to Terraform  
    . Terraform provê um plano de execução. Isso quer dizer que antes de aplicar qualquer coisa ele planeja sua execução.  
    . Terraform executa e aplica seu plano de forma paralela para recursos que são independentes.  
    . Terraform te conta o que está alterando(add, change, destroy) e em qual ordem.  
-   .  
 
 ## Casos de uso  
-   . São demonstração da aplicabilidade do terraform em vários cenários e arquiteturas. Alguns exemplos são:  
-      > heroku webapp  
-      > Arquitetura de aplicação multicamada. Ex.: A camada de banco de dados é criada antes da camada web, etc...  
-      > Multi-cloud deployments. Fazer deployments em diferentes providers cloud. O terraform é cloud-agnostic.  
-      > SDN.  
-      > etc...  
+São demonstrações da aplicabilidade do terraform em vários cenários e arquiteturas. Alguns exemplos são:  
+* heroku webapp  
+* Arquitetura de aplicação multicamada. Ex.: A camada de banco de dados é criada antes da camada web, etc...  
+* Multi-cloud deployments. Fazer deployments em diferentes providers cloud. O terraform é cloud-agnostic.  
+* OBS.: Estou usando o termo cloud-agostic, no sentido de que você conseguirá escrever código para os principais cloud providers, on-premises, etc.. Utilizando terraform.  
+* SDN.  
+* etc...  
 
 # Manage infrastructure   
 
 https://learn.hashicorp.com/tutorials/terraform/associate-study  
-...Continuar em >> Learn more subcommands  
+Learn more subcommands  
 
-
-
-#APPENDICE:  
+## APPENDICE:  
    . version control system (VCS)  
+   . Open-source software (OSS)
