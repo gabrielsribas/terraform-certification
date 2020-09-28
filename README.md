@@ -449,6 +449,60 @@ https://stackoverflow.com/questions/245192/what-are-first-class-objects
 
 >>4) Nothing  
 
+- Persistence data stored in state for a particular environment is called?  
+
+1) remote state  
+
+2) backend state  
+
+>>3) workspace  
+
+4) personalized state  
+
+- Terraform apply is in progress. It was supposed to make 20 changes. It finished 10. it ran into a run time error and apply phase stopped. What would happen?  
+
+1) It will roll back and so there will be 0 changes  
+
+>>2) The 10 changes will remain, but last 10 will not be executed  
+
+3) All 20 changes will be executed before the stoppage  
+
+- List values have to be ordered:  
+
+>>1) False  
+
+2) True  
+
+- Building blocks of Terraform:  
+
+1) instances  
+
+2) TF's  
+
+3) tags  
+
+>>4) resources  
+
+- Which of the following is NOT supported as backend:  
+
+>>1) heroku  
+
+2) artifactory  
+
+3) s3  
+
+4) consul  
+
+- How do you figure out which providers you are using?  
+
+1) terraform providers command  
+
+2) terraform apply command  
+
+3) terraform plan command  
+
+4) terraform state command  
+
 ## Principal terraform workspace commands easier:  
 - terraform workspace [new, list, show, select, delete]  
 
